@@ -11,6 +11,11 @@ class SplashActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_splash)
 
+
+    }
+
+    override fun onStart() {
+        super.onStart()
         Handler().postDelayed({
             // Start MainActivity after the delay
             startActivity(Intent(this@SplashActivity, MainActivity::class.java))
